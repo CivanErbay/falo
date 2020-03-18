@@ -1,0 +1,227 @@
+/*stylesheet*/
+:root {
+    --mainColor: #ff9800;
+}
+html {
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.15px;
+}
+h1 {
+    font-weight: 700;
+    margin: 2em;
+    font-family: "Merriweather", serif;
+    font-size: 4em;
+}
+h2 {
+    margin-top: 20%;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 20%;
+    font-size: 3em;
+    font-family: "Abril Fatface", cursive;
+}
+h3 {
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-top: 1em;
+    text-align: center;
+    font-family: "Abril Fatface", cursive;
+    font-style: black;
+    letter-spacing: 0px;
+}
+.about {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 0 20%;
+    border-bottom: solid;
+    padding: 1em;
+    border-width: 0.3em;
+    border-color: #ff9800;
+}
+/*.a {
+    color: black;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 2em;
+    font-weight: 700;
+  background-color: white!important;
+}
+*/
+
+.link_style {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Abril Fatface", cursive;
+    font-size: 3em;
+    letter-spacing: 0.3px;
+    background: linear-gradient(
+        to right,
+        var(--mainColor) 0%,
+        var(--mainColor) 5px,
+        transparent 5px
+    );
+    background-repeat: repeat-x;
+    background-size: 100%;
+    color: #000;
+    padding-left: 10px;
+}
+
+.link_style:hover {
+    background: linear-gradient(
+        to right,
+        var(--mainColor) 0%,
+        var(--mainColor) 5px,
+        transparent
+    );
+    color: black;
+}
+
+.active_link {
+    background-color: aqua;
+}
+
+.front_pic {
+    height: 45vh;
+    margin-top: 20%;
+    filter: grayscale(1);
+}
+.nav_control {
+    margin-top: 7em;
+}
+
+.about_pic1 {
+    margin-top: 15rem;
+
+    height: 30vh;
+
+    border-color: black;
+    border: solid;
+    border-radius: 50%;
+}
+.circle_text {
+    text-align: justify;
+
+    margin: 10%;
+    font-size: 1.2em;
+}
+.circle_headline_dot {
+    color: #ff9800;
+    font-family: Anton;
+}
+
+.footer_pos {
+    margin-right: 5em;
+    margin-top: 4em;
+
+    color: black;
+}
+
+.no_style {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+.no_style:hover {
+    text-decoration: none;
+    list-style-type: none;
+    color: #ff9800;
+}
+
+/* CAROUSEL SLIDE */
+.carousel .carousel-item {
+    margin-top: 10%;
+    width: 100%;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel .carousel-item:first-of-type {
+    background-image: url("http://4.bp.blogspot.com/-ypbpfUthWMQ/VC6fQVuwLGI/AAAAAAAAL8Y/gm3UHlyAZhw/s1600/01-Magic-Tricks-Revealed-Levitation.jpg");
+}
+
+.carousel .carousel-item:nth-of-type(2) {
+    background-image: url("assets/haircut.jpg");
+}
+
+.carousel .carousel-item:last-of-type {
+    background-image: url("/assets/feel.jpg");
+    filter: hue-rotate(90deg);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-control-next-icon:after {
+    content: ">";
+    font-size: 55px;
+    color: black;
+}
+
+.carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 55px;
+    color: black;
+}
+.hideme {
+    opacity: 0;
+}
+.body_1 {
+    margin: 0;
+    padding: 0 !important;
+}
+.cont_1 {
+    width: 90%;
+    margin: 10px auto;
+}
+
+
+/*ISOTOPE
+.portfolio-menu {
+    text-align: center;
+    margin-top: 35%;
+}
+.portfolio-menu ul li {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    padding: 10px 15px;
+    border: 1px solid tomato;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.portfolio-menu ul li:hover {
+    background-color: tomato;
+    color: #ffff;
+}
+.portfolio-item {
+    width: 100%;
+}
+.item {
+    height: 15vh !important;
+    width: 15vh !important;
+}
+.portfolio-item .item {
+    width: 15%;
+    float: left;
+    margin-bottom: 2%;
+}
+.li.active {
+    background: tomato;
+    color: #ffffff;
+}*/
+
+
+@media only screen and (max-width: 650px) {
+    h1 {
+        display: none;
+    }
+}
