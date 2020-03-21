@@ -1,10 +1,18 @@
-$(function() {
-    // $(document).ready shorthand
-    $(".monster").fadeIn("slow");
-});
-
 $(document).ready(function() {
-    /* Every time the window is scrolled ... */
+    // include html files
+    $("#footer").load("/includes/footer.html");
+    $("#main-body").load("/includes/main-body.html");
+    $("#left_nav").load("/includes/left_nav.html");
+    $("#right_nav").load("/includes/right_nav.html");
+    $("#momo-body").load("/includes/momo-body.html");
+    $(".monster").fadeIn("slow");
+
+    // //HIDE-DIV - OPEN DIV - TOGGLER
+    // $(".event_toggle").click(function() {
+    //     $(".hide_div").fadeToggle(750);
+    // });
+
+    /* Scroll-Hideme-Appear */
     $(window).scroll(function() {
         /* Check the location of each desired element */
         $(".hideme").each(function(i) {

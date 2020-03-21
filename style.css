@@ -1,32 +1,69 @@
 /*stylesheet*/
 :root {
-    --mainColor: #ff9800;
+    --mainColor: #f9ce21;
 }
 html {
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth !important;
 }
 body {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.15px;
+    background-position: center;
 }
-h1 {
+.logo {
+    padding: 3rem;
     font-weight: 700;
-    margin: 2em;
     font-family: "Merriweather", serif;
     font-size: 4em;
+    text-align: center;
 }
+
+.logo_pos {
+    background-image: linear-gradient(#f9ce21, #f9ce21);
+    background-size: 10px 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 5;
+}
+
 .h2 {
     margin-top: 20%;
+    font-weight: 800;
+    text-align: left;
+    margin-left: 10%;
+    letter-spacing: -3px;
+    font-size: 7em;
+    font-family: "Sen", sans-serif;
+}
+
+.h2_2 {
+    font-weight: 600;
+    font-size: 43vh;
+    font-family: "Abril Fatface", cursive;
+    color: white;
+    margin-bottom: 3%;
+}
+.h2_3 {
     font-weight: 700;
     text-align: left;
     margin-left: 20%;
+    margin-top: 5%;
     font-size: 3em;
-    font-family: "Merriweather", serif;
+    font-family: "Sen", sans-serif;
+}
+.h2_4 {
+    font-weight: 800;
+    text-align: left;
+    border-width: 1.5vh;
+    /* margin-left: 10%; */
+    font-size: 7em;
+    font-family: "Sen", sans-serif;
 }
 
 h3 {
     font-weight: 900;
-    font-size: 2.5em;
+    font-size: 3.2em;
     margin-top: 1em;
     text-align: center;
     font-family: "Abril Fatface", cursive;
@@ -35,30 +72,49 @@ h3 {
 }
 .about {
     font-size: 1.2em;
-    text-align: justify;
-    margin: 0 20%;
+    background-position: center;
+    margin: 0 10%;
+    line-height: 2.5rem;
+    padding: 2em;
+    text-align: left;
+    /* border-right: solid;
+    border-left: solid;
     border-bottom: solid;
-    padding: 1em;
-    border-width: 0.3em;
-    border-color: #ff9800;
+    border-color: black;
+    border-radius: 35px; */
 }
-/*.a {
-    color: black;
-  text-decoration: none;
-  list-style-type: none;
-  font-size: 2em;
-    font-weight: 700;
-  background-color: white!important;
+.about_1 {
+    font-size: 1.4em;
+    text-align: left;
+    margin: 0 10%;
+    background-position: center;
+    line-height: 2.3em;
+    padding: 2em;
+    /* border-right: solid;
+    border-left: solid;
+    border-bottom: solid;
+    border-color: black;
+    background-color: white; */
 }
-*/
+.about_2 {
+    margin-top: 4%;
+    font-size: 1.4rem;
+    text-align: left;
+    padding-right: 8%;
+    padding-left: 8%;
+    line-height: 2.3em;
+    /* border-bottom: solid;
+    border-top: solid;
+    border-color: #ff9800;*/
+}
 
 .link_style {
     color: black;
     text-decoration: none;
     list-style-type: none;
-    font-family: "Abril Fatface", cursive;
+    font-family: "Sen", sans-serif;
     font-size: 3em;
-    letter-spacing: 0.3px;
+    letter-spacing: -5px;
     background: linear-gradient(
         to right,
         var(--mainColor) 0%,
@@ -86,38 +142,42 @@ h3 {
 }
 
 .front_pic {
-    height: 45vh;
-    margin-top: 20%;
+    height: 70vh;
+    margin-top: 10%;
     filter: grayscale(1);
 }
 .nav_control {
-    margin-top: 7em;
+    margin-top: 7rem;
+    text-align: start;
+    font-size: 1.8rem;
+    right: 0;
 }
 
 .about_pic1 {
     margin-top: 15rem;
-
     height: 30vh;
-
     border-color: black;
     border: solid;
     border-radius: 50%;
 }
 .circle_text {
-    text-align: justify;
-
-    margin: 10%;
-    font-size: 1.2em;
+    text-align: left;
+    padding: 1em;
+    font-size: 1.4em;
+    margin-top: 10%;
+    border-top: solid;
+    border-left: solid;
+    border-color: #f9ce21;
+    line-height: 2.3rem;
 }
 .circle_headline_dot {
-    color: #ff9800;
+    color: #f9ce21;
     font-family: Anton;
 }
 
 .footer_pos {
     margin-right: 5em;
     margin-top: 4em;
-
     color: black;
 }
 
@@ -129,59 +189,11 @@ h3 {
 .no_style:hover {
     text-decoration: none;
     list-style-type: none;
-    color: #ff9800;
+    color: #f9ce21;
 }
 
-/* CAROUSEL SLIDE */
-.carousel .carousel-item {
-    margin-top: 10%;
-    width: 100%;
-    height: 50vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.carousel .carousel-item:first-of-type {
-    background-image: url("http://4.bp.blogspot.com/-ypbpfUthWMQ/VC6fQVuwLGI/AAAAAAAAL8Y/gm3UHlyAZhw/s1600/01-Magic-Tricks-Revealed-Levitation.jpg");
-}
-
-.carousel .carousel-item:nth-of-type(2) {
-    background-image: url("assets/haircut.jpg");
-}
-
-.carousel .carousel-item:last-of-type {
-    background-image: url("/assets/feel.jpg");
-    filter: hue-rotate(90deg);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 50px;
-    height: 50px;
-}
-
-.carousel-control-next-icon:after {
-    content: ">";
-    font-size: 55px;
-    color: black;
-}
-
-.carousel-control-prev-icon:after {
-    content: "<";
-    font-size: 55px;
-    color: black;
-}
 .hideme {
     opacity: 0;
-}
-.body_1 {
-    margin: 0;
-    padding: 0 !important;
-}
-.cont_1 {
-    width: 90%;
-    margin: 10px auto;
 }
 
 /*ISOTOPE*/
@@ -213,12 +225,12 @@ ul.filters > li > a {
 }
 
 ul.filters > li > a:hover {
-    background-color: #e6e9ed;
+    background-color: rgba(255, 152, 0, 0.3);
 }
 
 ul.filters > li.active > a {
     color: #fff;
-    background-color: #28bea8;
+    background-color: rgba(255, 152, 0, 1);
 }
 
 .card {
@@ -243,7 +255,7 @@ ul.filters > li.active > a {
     width: 100%;
     height: 100%;
     z-index: 9;
-    background-color: rgba(255, 152, 0, 0.3);
+    background-color: rgba(255, 152, 0, 0.2);
     color: #fff;
     font-size: 5px !important;
     font-family: "Merriweather", serif !important;
@@ -257,9 +269,9 @@ ul.filters > li.active > a {
 }
 
 .card-overlay h2 {
-    font-size: 0.3em;
     font-size: 3em !important;
-    text-align: centera;
+    text-align: center;
+    font-family: "Sen", sans-serif;
 }
 
 .card-hover {
@@ -286,31 +298,116 @@ ul.filters > li.active > a {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-h4.title {
-    color: #434e5e;
-    font-size: 1.2rem;
-    margin-bottom: 0;
+.font_light {
+    font-weight: 300;
 }
-
-.card-btn {
-    margin-bottom: -40px;
-    font-size: 0.9rem;
-    background-color: #fff;
-    color: #222;
-    border: 1px solid #eee;
-    border-radius: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.card-btn:hover {
-    background-color: #28bea8;
-    color: #fff;
-}
-
 @media only screen and (max-width: 650px) {
     h1 {
         display: none;
     }
+}
+/* MOMO Page*/
+.momo {
+    font-family: "Liu Jian Mao Cao", cursive !important;
+}
+.h1_momo {
+    font-weight: bold;
+    font-family: "Liu Jian Mao Cao", cursive !important;
+    font-size: 8rem;
+    font-weight: 700;
+    margin: 0.5em;
+}
+
+.sign_pic {
+    height: 70vh;
+    margin-top: 15%;
+    filter: blur(10px);
+}
+.sign_lang {
+    margin-top: 10%;
+}
+.hide_div {
+    display: none;
+}
+.hide_div2 {
+    display: none;
+}
+.hide_div3 {
+    display: none;
+}
+.hide_div4 {
+    display: none;
+}
+
+.bg_image {
+    background-image: url("/assets/fabs3_blur.jpg");
+    background-position: center center;
+    /*PARALAX BEGIN*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*PARALAX END */
+    color: black;
+    height: 70vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.monster {
+    padding: 3rem;
+}
+
+.magic_hover {
+    background-size: 100% 200%;
+    text-decoration: none;
+    list-style-type: none;
+    background-image: linear-gradient(to bottom, #fff 50%, #f9ce21 50%);
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    color: black;
+    border-bottom: solid;
+    border-color: #f9ce21;
+}
+.magic_hover:hover,
+.magic_hover:focus {
+    background-position: 0 100%;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* KONTAKT */
+.contact {
+    text-align: left;
+    padding: 5% 10% 10% 10%;
+}
+
+.contact_list {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 2.5rem;
+    margin-top: 2%;
+}
+
+.contact_list li {
+    margin-top: 2%;
+}
+
+.fa {
+    font-size: 4.5rem !important;
+}
+.fb_insta {
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 5%;
+    margin-left: 16%;
+    color: black;
+}
+
+.fa-instagram:hover {
+    color: pink;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
 }
