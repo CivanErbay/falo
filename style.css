@@ -301,11 +301,6 @@ ul.filters > li.active > a {
 .font_light {
     font-weight: 300;
 }
-@media only screen and (max-width: 650px) {
-    h1 {
-        display: none;
-    }
-}
 /* MOMO Page*/
 .momo {
     font-family: "Liu Jian Mao Cao", cursive !important;
@@ -410,4 +405,145 @@ ul.filters > li.active > a {
 
 .fa-facebook:hover {
     color: #3b5998;
+}
+#mainNav {
+    text-decoration: none;
+    list-style-type: none;
+}
+@media only screen and (max-width: 1100px) {
+    .fixed-top {
+        position: static;
+        overflow: hidden;
+    }
+    .monster {
+        margin: 0 !important;
+        overflow: hidden; /*ULTRA-WICHTIG */
+    }
+}
+
+/* TABLET */
+@media only screen and (max-width: 768px) {
+    #start {
+        margin-top: 2rem;
+    }
+    .fixed-top {
+        position: static;
+    }
+    .monster {
+        margin: 0 !important;
+        overflow: hidden;
+    }
+
+    .h2 {
+        font-size: 4.5rem;
+    }
+    .about_1 {
+        font-size: 1.1rem;
+        margin: 0 3%;
+    }
+    .about_pic1 {
+        margin-top: 3rem;
+    }
+    .h2_2 {
+        font-size: 21vh;
+    }
+    .about_2 {
+        font-size: 1.1rem;
+        margin: 5% 0 3%;
+    }
+    .about {
+        font-size: 1rem;
+        text-align: justify;
+        text-justify: distribute;
+    }
+    .h2_3 {
+        margin: 10% 0 0;
+    }
+    .logo_pos {
+        background-position: 0;
+    }
+    .nav_control {
+        margin-top: 1rem;
+        text-align: start;
+        font-size: 0.8rem;
+        right: 0;
+    }
+}
+
+/* Iphone6/7 (5) */
+@media only screen and (max-width: 375px) {
+    #start {
+        margin-top: 1rem;
+    }
+    .fixed-top {
+        position: static;
+    }
+    .monster {
+        margin: 0 !important;
+        padding: 1em;
+    }
+    .h2 {
+        font-size: 4.5rem;
+    }
+    .front_pic {
+        height: 50vh;
+    }
+    .about_1 {
+        font-size: 0.8rem;
+        margin: 0 3%;
+    }
+    .about_pic1 {
+        margin-top: 3rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    .circle_text {
+        font-size: 1rem;
+    }
+    .h2_2 {
+        font-size: 17vh;
+    }
+    .about_2 {
+        font-size: 0.8rem;
+        margin: 5% 0 3%;
+    }
+    .about {
+        font-size: 0.75rem;
+        text-align: justify;
+        line-height: 1.25rem;
+        text-justify: auto;
+        text-align: left;
+    }
+    .h2_3 {
+        font-size: 1.8rem;
+        margin: 10% 0 0;
+    }
+    .h2_4 {
+        font-size: 4rem;
+        margin: 10% 0 0;
+        font-weight: 800;
+        border-bottom: solid;
+    }
+    .logo_pos {
+        background-position: 0;
+    }
+    .contact_list {
+        font-size: 1.3rem;
+    }
+    .fa {
+        font-size: 2.5rem !important;
+    }
+
+    .footer_pos {
+        margin: 0 1%;
+        color: black;
+        font-size: 0.8rem;
+    }
+    .nav_control {
+        margin-top: 1rem;
+        text-align: start;
+        font-size: 0.8rem;
+        right: 0;
+    }
 }
